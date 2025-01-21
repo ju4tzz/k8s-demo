@@ -6,8 +6,8 @@ metadata:
   labels:
     app: k8s-demo
 spec:
+  type: NodePort
   ports:
-    type: NodeType
     - name: k8s-demo-server
       port: 8081 # service port
       targetPort: 8080 # container port
