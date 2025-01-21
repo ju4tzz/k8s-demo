@@ -27,8 +27,8 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-            path: /ping
-            port: 8080
+              path: /ping
+              port: 8080
             initialDelaySeconds: 30
             periodSeconds: 10
             timeoutSeconds: 2
@@ -36,8 +36,8 @@ spec:
             successThreshold: 1
           readinessProbe:
             httpGet:
-            path: /ping
-            port: 8080
+              path: /ping
+              port: 8080
             initialDelaySeconds: 30
             periodSeconds: 10
             timeoutSeconds: 2
