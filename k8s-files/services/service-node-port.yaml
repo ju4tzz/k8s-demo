@@ -12,3 +12,5 @@ spec:
       port: 8081 # service port
       targetPort: 8080 # container port
       nodePort: 30007
+  selector:
+    app: k8s-demo
