@@ -8,10 +8,12 @@ metadata:
 spec:
   ports:
     # single port
-    - port: 8081 # service port
+    - name: k8s-demo-server
+      port: 8081 # service port
       targetPort: 8080 # container port
     # multiple ports
-    - port: 8082
+    - name: k8s-demo-server-health
+      port: 8082
       targetPort: 8082
     # different protocols
     - name: dns
