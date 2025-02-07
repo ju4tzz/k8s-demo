@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: nginx-ingress-lb
@@ -6,6 +6,9 @@ metadata:
     name: nginx-ingress-lb
   namespace: k8s-demo
 spec:
+  selector:
+    matchLabels:
+      name: nginx-ingress-lb
   template:
     metadata:
       lables:
